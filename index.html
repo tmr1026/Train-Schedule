@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Schedule</title>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Train Schedule</h1>
+        </div>
+
+        <div class="panel-success">
+            <div class="panel-heading">
+                <h3>Current Train Schedule</h3>
+                <hr>
+            </div>
+            <div class="panel-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Train Name</th>
+                            <th>Destination</th>
+                            <th>Frequency</th>
+                            <th>Next Arrival</th>
+                            <th>Minutes Away</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="addTableData">
+                    </tbody>
+
+                </table>
+                </di>
+            </div>
+            
+            <div class="panel-success">
+                <div class="panel-heading">
+                    <h3>Add Train</h3>
+                    <hr>
+                </div>
+
+                <div class="panel-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="text">Train Name</label>
+                            <input type="text" class="form-control" id="train-name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="text">Destination</label>
+                            <input type="text" class="form-control" id="destination">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="text">First Train Time (HH:mm - Military Time)</label>
+                            <input type="text" class="form-control" id="first-train">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="text">Frequency(min)</label>
+                            <input type="text" class="form-control" id="frequency">
+                        </div>
+
+                        <button type="submit" id="submit" class="btn">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div> 
+</body>
+</html>
